@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Listado</title>
+		<link rel="stylesheet" href="/estilos/style.css">
+  		<link rel="icon" href="/img/Logotipo.png">
+		<style type="text/css">
+			article{display: flex;}
+			form{display: flex;}		
+			h4{width: 200px;}
+			#alta{justify-content: flex-start;}
+			#listado{display: contents;}
+			a{text-decoration: none; color: black;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="bloque_header bloque_header_vacio"></div>
+		
+			<div id="titulocont" class="bloque_header bloque_header_centro">
+			  <img id="logo" src="/img/Logotipo.png" alt="logo">
+			  <a href="index.html">
+				<h1>GigaRol</h1>
+			  </a>
+			</div>
+		
+			<!--Bloque con los iconos de usuario y carrito de compras-->
+		
+			<div class="bloque_header bloque_header_derecho">
+			  <a href="listado.html">
+				<img src="/img/shopping-cart_icon-icons.com_65051.svg" alt="carrito" class="icono_carrito" >
+			  </a>
+			  <a href="login.html">
+				<img src="/img/Gender_Neutral_User_icon-icons.com_55902.svg" alt="login" class="icono_login" >
+			  </a>
+			  
+			</div>
+		</header>
+		<div class="navegador">
+			<nav>
+			  <ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="catalogo.html">Catalogo</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			  </ul>
+			</nav>
+		</div>
+
+		<h2>Listado</h2>
+		<article>
+			<h4>Producto</h4>
+			<h4>Precio</h4>
+			<h4>Cantidad</h4>
+		</article>
+		<article id="listado">
+			
+		</article>
+		<form id="alta" action="/listado" method="POST" enctype="multipart/form-data">
+			<input type="text" name="item">
+			<input type="text" name="precio">
+			<input type="text" name="cantidad">
+			<input type="submit" value="Crear Nuevo Item">
+		</form>
+		<!--form action="/landing?_metodo=PUT" method="POST" enctype="application/x-www-form-urlencoded">
+			<label>Actualizar: <input type="text" name="update"></label>
+			<input type="submit" value="PUT">
+		</form><br>
+		<form action="/landing?_metodo=DELETE" method="POST" enctype="application/x-www-form-urlencoded">
+			<label>Eliminar: <input type="text" name="delete" value="${valor inyectado}"></label>
+			<input type="submit" value="DELETE">
+		</form-->
+		<script type="text/javascript" src="JS/listado.js"></script>
+		<footer>
+			<ul>
+			  <li>santybord@gmail.com</li>
+			  <li>Tel: 112233-4455</li>
+			  <li>@copyright</li>
+			</ul>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaRol</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="icon" href="/img/Logotipo.png">
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header>
+
+        <div class="bloque_header bloque_header_vacio"></div>
+
+        <div id="titulocont" class="bloque_header bloque_header_centro">
+            <img id="logo" src="/img/Logotipo.png" alt="logo">
+            <a href="index.html">
+                <h1>GigaRol</h1>
+            </a>
+        </div>
+
+        <div class="bloque_header bloque_header_derecho">
+            <img src="/img/shopping-cart_icon-icons.com_65051.svg" alt="carrito" class="icono_carrito">
+            <a href="registro.html">
+                <img src="/img/Gender_Neutral_User_icon-icons.com_55902.svg" alt="login" class="icono_login">
+            </a>
+        </div>
+
+    </header>
+
+    <div class="navegador">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="grid-bloquec1">
+            <div class="grid-item">
+                <img id="contacto" src="/img/contacto.jpg" alt="contacto">
+            </div>
+
+            <div class="grid-item presentacion">
+                <h2>Conocenos!</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                    voluptate, iusto totam magni quas porro ipsa quae aperiam
+                    asperiores. Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Perspiciatis voluptate dicta reprehenderit et vero doloribus,
+                    distinctio at ad voluptatibus laboriosam, quas fuga error quasi
+                    dolorum maiores sint. Consequatur, sequi eligendi.
+                </p>
+            </div>
+
+        </div>
+        <div class="contacto">
+            <div class="grid-item-contacto texto">
+                <h2>Donde Encontrarnos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure</p>
+            </div>
+            <div class="grid-item-contacto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.839385289744!2d-58.505842189286284!3d-34.860262870978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd6d0cb54d6af%3A0xee5f39a1a5718b12!2sPaseo%20Plaza%20Canning%2C%20Ezeiza!5e0!3m2!1ses-419!2sar!4v1714085545658!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!--Formulario de contacto-->
+
+        <section class="grid-bloque-formulario">
+
+            <div class="item-formulario vacio-izquierdo"></div>
+
+            <div class="item-formulario centro">
+
+                <h1>Escribime</h1>
+
+                <form id="formulario-contacto">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </div>
+
+            <div class="item-formulario vacio-derecho"></div>
+        </section>
+
+        <!--Links con las redes-->
+
+        <div class="redes">
+            
+            <div class="grid-item-redes">
+                <h2>Seguinos en Nuestras Redes!</h2>
+            </div>
+
+            <div class="grid-item-redes">
+                <img src="/img/linkedin_icon-icons.com_65929.svg" alt="linkedin">
+                <img src="/img/Instagram_icon-icons.com_66804.svg" alt="instagram">
+                <img src="/img/gmail_new_logo_icon_159149.svg" alt="gmail">
+            </div>
+        </div>
+
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+        <ul>
+            <li>santybord@gmail.com</li>
+            <li>Tel: 112233-4455</li>
+            <li>@copyright</li>
+        </ul>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
